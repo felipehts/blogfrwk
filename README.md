@@ -27,8 +27,7 @@ Criar um projeto utilizando Spring Boot, com as seguintes funcionalidades:
 
 ## Tecnologias
 
-- Java 8
-- Java versão 8 ou superior
+- Java 8+
 - Spring Boot 2.3.5
 - Banco de Dados Postgresql
 - API Restful
@@ -43,7 +42,7 @@ Criar um projeto utilizando Spring Boot, com as seguintes funcionalidades:
 
 Execute `mvn spring-boot:run` para executar a versão de desenvolvimento. Depois acesse `http://localhost:8080/`.
 
-Para executar o servidor web, acesse: [Blogfwrk-client](https://github.com/felipehts/blogfrwk).
+Para executar o servidor web, acesse: [Blogfwrk-client](https://github.com/felipehts/blogfrwk-client).
 
 
 ## Dúvidas
