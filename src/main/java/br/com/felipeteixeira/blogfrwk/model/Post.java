@@ -47,7 +47,7 @@ public class Post {
 	
 
 	@NotBlank
-	@Column(name = "description", length = 2000)
+	@Column(name = "description", length = 10000)
 	private String description;
 
 
