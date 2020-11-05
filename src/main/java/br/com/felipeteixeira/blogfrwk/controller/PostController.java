@@ -21,7 +21,7 @@ import br.com.felipeteixeira.blogfrwk.repository.UserRepository;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/post")
+@RequestMapping("/api")
 public class PostController {
 	
 	
@@ -31,33 +31,17 @@ public class PostController {
 	@Autowired
 	UserRepository userRepository;
 	
-    @PostMapping("/create")
+    @PostMapping("/post")
     public Post createPost(@Valid @RequestBody Post post) {
         return postRepository.save(post);
     }
     
-    /*
-    @GetMapping("/list/{id_user}")
-    public List<Post> getPostByIdUser(@PathVariable(value = "id_user") Long userId){
-    	List<Post> posts = postRepository.findByUser(userRepository.getOne(userId));
-    	return postRepository.findByUser(userRepository.getOne(userId));
-    }
-    */
-    
-    /*
-    @GetMapping("/list/{id_user}")
-    public List<Post> getPostByIdUser(@PathVariable(value = "id_user") Long userId){
-    	//List<Post> posts = postRepository.findByUser(userRepository.getOne(userId));
-    	return postRepository.findByUser(userRepository.getOne(userId));
-    }
-    */
-    
-    @GetMapping("/{id}")
+    @GetMapping("/post/{id}")
     public Optional<Post> getPostById(@PathVariable(value = "id") Long id){
     	return postRepository.findById(id);
     }
     
-    @GetMapping("/list")
+    @GetMapping("/posts")
     public List<Post> getAllPosts(){
     	return postRepository.findAll();
     }

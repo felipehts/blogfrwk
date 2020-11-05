@@ -29,7 +29,7 @@ public class Post {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@JsonIgnore
+
 	@NotBlank
 	@OneToOne
 	@JoinColumn(name = "id_user")

@@ -12,5 +12,7 @@ import br.com.felipeteixeira.blogfrwk.model.Post;
 public interface CommentRepository extends JpaRepository<Comment, Long> {
 	
 	List<Comment> findByPost(Post post);
+	
+	
 
 }

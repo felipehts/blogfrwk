@@ -30,7 +30,7 @@ public class Comment {
 	@JoinColumn(name = "id_post")
 	private Post post;
 
-	@JsonIgnore
+
 	@NotBlank
 	@OneToOne
 	@JoinColumn(name = "id_user")
